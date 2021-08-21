@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title> Text Editor </title>
+</head>
+<body>
+    <div id="container">
+
+        <div class="elements">
+            <div class="box">
+                <form>
+                    <select name="family" id="">
+                        <option value="arial"> Arial </option>
+                        <option value="Helvatica"> Helvatica </option>
+                    </select>
+                    <select name="numbers" id="">
+                        <option value="12"> 12 </option>
+                        <option value="14"> 14 </option>
+                        <option value="20"> 20 </option>
+                    </select>
+                </form>
+            </div>
+    
+            <div class="box">
+                <button onclick="noColor(this)" id="noCol"> Color </button>
+                <div class="dropdown">
+                    <button class="dropBtn"> <i class="fas fa-2x fa-caret-down"></i> </button>
+                    <div class="dropdown-content">
+                        <div class="content">
+                            <div onclick="color(this)" class="colors colorBox1"></div>
+                            <div onclick="color(this)" class="colors colorBox2"></div>
+                            <div onclick="color(this)" class="colors colorBox3"></div>
+                            <div onclick="color(this)" class="colors colorBox4"></div>
+                            <div onclick="color(this)" class="colors colorBox5"></div>
+                            <div onclick="color(this)" class="colors colorBox6"></div>
+                            <div onclick="color(this)" class="colors colorBox7"></div>
+                        </div>
+                        <div class="content">
+                            <div onclick="color(this)" class="colors colorBox8"></div>
+                            <div onclick="color(this)" class="colors colorBox9"></div>
+                            <div onclick="color(this)" class="colors colorBox10"></div>
+                            <div onclick="color(this)" class="colors colorBox11"></div>
+                            <div onclick="color(this)" class="colors colorBox12"></div>
+                            <div onclick="color(this)" class="colors colorBox13"></div>
+                            <div onclick="color(this)" class="colors colorBox14"></div>
+                        </div>
+                        <div class="content">
+                            <div onclick="color(this)" class="colors colorBox15"></div>
+                            <div onclick="color(this)" class="colors colorBox16"></div>
+                            <div onclick="color(this)" class="colors colorBox17"></div>
+                            <div onclick="color(this)" class="colors colorBox18"></div>
+                            <div onclick="color(this)" class="colors colorBox19"></div>
+                            <div onclick="color(this)" class="colors colorBox20"></div>
+                            <div onclick="color(this)" class="colors colorBox21"></div>
+                        </div>
+                        <div class="content">
+                            <div onclick="color(this)" class="colors colorBox22"></div>
+                            <div onclick="color(this)" class="colors colorBox23"></div>
+                            <div onclick="color(this)" class="colors colorBox24"></div>
+                            <div onclick="color(this)" class="colors colorBox25"></div>
+                            <div onclick="color(this)" class="colors colorBox26"></div>
+                            <div onclick="color(this)" class="colors colorBox27"></div>
+                            <div onclick="color(this)" class="colors colorBox28"></div>
+                        </div>
+                        <div class="content">
+                            <div onclick="color(this)" class="colors colorBox29"></div>
+                            <div onclick="color(this)" class="colors colorBox30"></div>
+                            <div onclick="color(this)" class="colors colorBox31"></div>
+                            <div onclick="color(this)" class="colors colorBox32"></div>
+                            <div onclick="color(this)" class="colors colorBox33"></div>
+                            <div onclick="color(this)" class="colors colorBox34"></div>
+                            <div onclick="color(this)" class="colors colorBox35"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="box">
+                <button onclick="bold(this)" class="bold"> Bold </button>
+                <button onclick="italic(this)" class="italic"> Italic </button>
+                <button onclick="underline(this)" class="underline"> Underline </button>
+            </div>
+    
+            <div class="box">
+                <button onclick="left(this)" class="left"> <i class="fas fa-2x fa-align-left"></i> </button>
+                <button onclick="center(this)" class="center"> <i class="fas fa-2x fa-align-center"></i> </button>
+                <button onclick="right(this)" class="right"> <i class="fas fa-2x fa-align-right"></i> </button>
+                <button onclick="justify(this)" class="justify"> <i class="fas fa-2x fa-align-justify"></i> </button>
+            </div>
+        </div>
+
+        <div class="type">
+            <form>
+                <textarea name="" id="typing" cols="70" rows="20" placeholder="Enter your text here"> Ahmed Raza Attari </textarea>
+            </form>
+        </div>
+
+    </div>
+
+
+    <!-- <i class="fas fa-5x fa-search"></i> -->
+    
+
+
+    <script src="app.js"></script>
+</body>
+</html>

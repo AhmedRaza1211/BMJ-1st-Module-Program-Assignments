@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFE194;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    border: 2px solid #FFE194;
+    border-radius: 10px;
+    background: #fff;
+    width: 40%
+}
+
+.container .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
+}
+
+.container .header .title {
+    margin-left: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.container .header .time {
+    margin-right: 20px;
+}
+
+.container .quizBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .quizBox .question {
+    margin-left: 30px;
+    user-select: none;
+}
+
+.container .quizBox .options {
+    margin: 0 30px;
+}
+
+.container .quizBox .options p {
+    cursor: pointer;
+    border: 1px solid #E93B81;
+    background: #f8e5ed;
+    padding: 10px;
+    border-radius: 5px;
+    user-select: none;
+}
+
+.container .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-top: 1px solid lightgrey;
+}
+
+.container .footer p {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.container .footer a button {
+    margin-right: 20px;
+    padding: 8px 20px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid #E93B81;
+    color: #E93B81;
+}
+
+.container .footer a button:hover {
+    background: #E93B81;
+    color: #fff;
+}
+
+.submitButton {
+    margin-right: 20px;
+    padding: 8px 15px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    outline: none;
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+}
+
+

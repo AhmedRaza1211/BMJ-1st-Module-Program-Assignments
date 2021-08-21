@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container {
+    /* width: 50%; */
+    border: 5px solid #61C6F2;
+    padding: 25px;
+    border-radius: 20px;
+    background-color: #e9ecf3;
+    font-weight: bold;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    outline: none;
+    border:5px solid #61C6F2;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: white;
+    
+}
+/* Single Row in Calculator */
+.line {
+    display: flex;
+    justify-content: center;
+}
+
+/* Each Box */
+.box {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: helvetica;
+    color: #61C6F2;
+    background-color: white;
+    cursor: pointer;
+}
+
+.box p {
+    text-align: center;
+}
+
+/* Calculator Signs */
+.sign {
+    background-color: #61C6F2;
+    color: white;
+}

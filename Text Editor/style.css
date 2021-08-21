@@ -1,0 +1,238 @@
+/* Main Container */
+#container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+/* Tool Box */
+#container .elements {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* Tool Box Properties */
+#container .elements .box {
+    display: flex;
+}
+
+/* Color Box */
+/* .colors {
+    height: 20px;
+    width: 20px;
+}
+
+.color1,.color3,.color5,.color7 {
+    color: #002D62;
+}
+.color8,.color4,.color6 {
+    color: #6CB4EE;
+}
+.color2,.color10,.color12 {
+    color: #EF0107;
+}
+.color9,.color11,.color13 {
+    color: #fd5c63;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.dropBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+} */
+.colors{
+    width: 20px;
+    height: 20px;
+    margin: 0px 1.5px;
+    border-bottom: 0.05px solid white;
+}
+
+/* .colorBox1 {
+    background-color: rgb(241, 201, 21);
+}
+.colorBox2 {
+    background-color: rgb(13, 114, 10);
+}
+.colorBox3 {
+    background-color: rgb(216, 17, 60);
+}
+.colorBox4 {
+    background-color: rgb(32, 46, 235);
+}
+.colorBox5 {
+    background-color: rgb(209, 13, 183);
+}
+.colorBox6 {
+    background-color: rgb(31, 189, 252);
+} */
+.colorBox1 {
+    background: #ff0000;
+}
+.colorBox8 {
+    background: #ff2d2d;
+}
+.colorBox15 {
+    background: #ff5252;
+}
+.colorBox22 {
+    background: #ff7b7b;
+}
+.colorBox29 {
+    background: #ffbaba;
+}
+
+.colorBox2 {
+    background: #072870;
+}
+.colorBox9 {
+    background: #192194;
+}
+.colorBox16 {
+    background: #0f3bc0;
+}
+.colorBox23 {
+    background: #2e4afc;
+}
+.colorBox30 {
+    background: #3a71e8;
+}
+
+.colorBox3 {
+    background: #136229;
+}
+.colorBox10 {
+    background: #0a740f;
+}
+.colorBox17 {
+    background: #008f0a;
+}
+.colorBox24 {
+    background: #1bcb0a;
+}
+.colorBox31 {
+    background: #00ee56;
+}
+
+
+.colorBox4 {
+    background: #FFA505;
+}
+.colorBox11 {
+    background: #FFB805;
+}
+.colorBox18 {
+    background: #FFC905;
+}
+.colorBox25 {
+    background: #FFFB05;
+}
+.colorBox32 {
+    background: #feff41;
+}
+
+.colorBox5 {
+    background: #31255e;
+}
+.colorBox12 {
+    background: #41327e;
+}
+.colorBox19 {
+    background: #523f9e;
+}
+.colorBox26 {
+    background: #7465b1;
+}
+.colorBox33 {
+    background: #978bc4;
+}
+
+.colorBox6 {
+    background: #ff7f00;
+}
+.colorBox13 {
+    background: #ff8b1a;
+}
+.colorBox20 {
+    background: #ff9934;
+}
+.colorBox27 {
+    background: #ffa64e;
+}
+.colorBox34 {
+    background: #ffb76f;
+}
+
+.colorBox7 {
+    background: #ff009a;
+}
+.colorBox14 {
+    background: #ff2cab;
+}
+.colorBox21 {
+    background: #fd71c5;
+}
+.colorBox28 {
+    background: #ffa3da;
+}
+.colorBox35 {
+    background: #ffd6ef;
+}
+.dropBtn {
+    /* background-color: #4CAF50; */
+    /* color: white; */
+    /* padding: 16px; */
+    /* font-size: 16px; */
+    /* border: none; */
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    /* display: flex; */
+
+  }
+
+.content {
+    display: flex;
+}
+
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML Questions/Answers </title>
+    <link rel="stylesheet" href="../CSS/htmlquiz.css">
+</head>
+
+<body onload="show()">
+
+    <div id="container" class="container">
+
+        <div class="header">
+            <div class="title">
+                <p> HTML QUIZ </p>
+            </div>
+
+            <div class="time">
+                <p> Time Left <span> 12 </span></p>
+            </div>
+        </div>
+
+        <div class="quizBox">
+            <div class="question">
+                <h2 id="question"> 1. What does HTML stand for? </h2>
+            </div>
+            <div class="options" id="options">
+                <p onclick="checking(this)"> Hyperlinks and Text Markup Language</p>
+                <p onclick="checking(this)"> Home Tool Markup Language </p>
+                <p onclick="checking(this)"> Hyper Text Markup Language </p>
+                <p onclick="checking(this)"> Hyper Tool Multi Language </p>
+            </div>
+        </div>
+
+        <div id="footer" class="footer">
+            <p> 1 of 10 Questions </p>
+            <a href="#" onclick="next()" id="nextBtn"> <button> Next </button> </a>
+        </div>
+
+    </div>
+
+    <script src="../Javascript/htmlquiz.js"></script>
+    
+</body>
+
+</html>

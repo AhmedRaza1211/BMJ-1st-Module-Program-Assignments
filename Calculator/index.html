@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Calculator Javascript</title>
+</head>
+<body>
+    <div class="container">
+
+        <input type="text" disabled class="input" id="input">
+
+        <div class="line">
+            <div onclick="getValue('7')" class="box"><p> 7 </p></div>
+            <div onclick="getValue('8')" class="box"><p> 8 </p></div>
+            <div onclick="getValue('9')" class="box"><p> 9 </p></div>
+            <div onclick="getValue('%')" class="box sign"><p> % </p></div>
+        </div>
+        <div class="line">
+            <div onclick="getValue('4')" class="box"><p> 4 </p></div>
+            <div onclick="getValue('5')" class="box"><p> 5 </p></div>
+            <div onclick="getValue('6')" class="box"><p> 6 </p></div>
+            <div onclick="getValue('/')" class="box sign"><p> / </p></div>
+        </div>
+        <div class="line">
+            <div onclick="getValue('1')" class="box"><p> 1 </p></div>
+            <div onclick="getValue('2')" class="box"><p> 2 </p></div>
+            <div onclick="getValue('3')" class="box"><p> 3 </p></div>
+            <div onclick="getValue('*')" class="box sign"><p> * </p></div>
+        </div>
+        <div class="line">
+            <div onclick="getValue('0')" class="box"><p> 0 </p></div>
+            <div onclick="getValue('.')" class="box"><p> . </p></div>
+            <div onclick="getValue('+')" class="box sign"><p> + </p></div>
+            <div onclick="getValue('-')" class="box sign"><p> - </p></div>
+        </div>
+        <div class="line">
+            <div onclick="clear12()" class="box"><p> C </p></div>
+            <div onclick="calculate()" class="box sign"><p> = </p></div>
+            <div onclick="empty()" class="box"><p> AC </p></div>
+        </div>
+    </div>
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
