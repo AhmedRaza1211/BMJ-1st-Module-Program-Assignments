@@ -14,11 +14,16 @@ var questionsAnswers = [{
     question: 'Calculate the sum? 22 + 2=?',
     answer: '24',
     optionsInObject: ['25', '24', '29', '22'],
+}, {
+    question: 'Who is the founder of Pakistan?',
+    answer: 'Quaid i Azam',
+    optionsInObject: ['Quaid i Azam', 'Allama Iqbal', 'Nawaz Sharif', 'Altaf Hussain'],
 },];
 
 var question = document.getElementById('question');
 var options = document.getElementById('options').getElementsByTagName('p');
 var nextBtn = document.getElementById('nextBtn');
+var questionDetail = document.getElementById('questionDetail');
 var nextQuestionCounter = 0;
 var right = 0;
 
@@ -31,6 +36,8 @@ function show() {
         options[i].style.backgroundColor = "#f8e5ed";
         options[i].style.color = "#000";
     } 
+    questionDetail.innerHTML = `${nextQuestionCounter + 1} of ${questionsAnswers.length} Questions`
+
 }
 
 function next() {
@@ -38,19 +45,24 @@ function next() {
     show();
 }
 
+
 function nextPage() {
-    // window.location = '../HTML/results.html';
     var container = document.getElementById('container');
-    // container.remove();
-    // container.style.display = 'none';
+    container.remove();
+    var result = document.getElementById('result');
+    result.classList.add('result');
     var pTag = document.createElement('p');
-    var pText = document.createTextNode(`Your did ${right} out of ${questionsAnswers.length}`);
+    var pText = document.createTextNode(`You did ${right} out of ${questionsAnswers.length}`);
     pTag.appendChild(pText);
-    pTag.style.textAlign = 'center';
-    container.appendChild(pTag);
-
+    var heading = document.createElement('h1');
+    var headingText = document.createTextNode('RESULT');
+    heading.appendChild(headingText);
+    heading.classList.add('heading');
+    // pTag.style.textAlign = 'center';
+    pTag.classList.add('resultLine');
+    result.appendChild(heading);
+    result.appendChild(pTag);
 }
-
 function checking(clickValue) {
     console.log(clickValue);
     clickValue.style.backgroundColor = "#E93B81";
@@ -71,7 +83,7 @@ function checking(clickValue) {
         var submitButtonText = document.createTextNode('SUBMIT');
         submitButton.appendChild(submitButtonText);
         submitButton.classList.add('submitButton');
-        submitButton.setAttribute('onClick', 'nextPage()')
+        submitButton.setAttribute('onClick', 'nextPage()');
         var footer = document.getElementById('footer');
         footer.appendChild(submitButton);
     } else {
